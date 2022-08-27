@@ -18,20 +18,29 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 5. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
 6. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting 
 7. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL in github page>"`
-8. Visit `https://<YOUR-website-root>/gh-sitemap/<YOUR-website-root>` to generate sitemap
+8. Visit `https://<your-website-root>/gh-sitemap/<your-website-root>` to generate sitemap
 9. Copy all content of sitemap and save as `sitemap.xml`
+10. Change path of main static files (css and js) in `index.html` to match your hosting path IE: <your-website-root>/css/main.css and <your-website-root>
 ### On your own server
 1. Clone the repository
 2. Copy `config.dist.json` as `config.json`
 3. Change the data in `config.json` to match your data 
 4. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
 5. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL>"` if you are using path other than / as root
-6. Visit `https://<YOUR-website-root>/get-sitemap/<YOUR-website-root>` to generate sitemap 
+6. Visit `https://<your-website-root>/get-sitemap/<your-website-root>` to generate sitemap 
 7. Copy all content of sitemap and save as `sitemap.xml`
+8. Change path of main static files (css and js) in `index.html` to match your hosting path IE: <your-website-root>/css/main.css and <your-website-root>
  
 ## Maintenance
 1. Update `config.json`
 2. Update `sitemap.xml` using previous steps if you added or removed projects or enabled/disabled gallery
+
+## Upgrade
+1. Pull from upstream
+2. Update `config.json` if there are any changes in config.dist.json or config-info
+3. Update `sitemap.xml` if needed
+4. Perform step 7 and 10 of `installation > On GitHub pages` if you are using GitHub pages
+5. Perform step 5 & 8 of `installation > On your own server` if you are hosting it on you own server.
 
 ## Features
 * Completely dynamic setup.
