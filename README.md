@@ -1,6 +1,6 @@
 # Statically hosted dynamic personal website
 
-This project runs using client side technology so that it can be hosted on a server that can only host static websites. But it uses JSON api to make things Dynamic(Kind of).
+This project runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic(Kind of).
 <br>
 If you are not reading this from the `Personal-Website-Client` Repository of `NightmareGaurav`, then follow this <a href="https://github.com/nightmaregaurav/personal-website-client">link</a>.
 
@@ -11,7 +11,7 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 
 ## Installation
 ### On GitHub pages
-1. Fork the repository
+1. Fork the repository, preferably with name `<your-username>.github.io`
 2. Go to settings and enable GitHub pages
 3. Change path of main static files (css and js) in `index.html` to match your hosting path IE: <your-website-root>
 4. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL in github page>"` if you are using path other than / as root, normally happens when you are not using custom domain 
@@ -36,10 +36,10 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 2. Update `sitemap.xml` using previous steps if you added or removed projects or enabled/disabled gallery
 
 ## Upgrade
-1. Pull from upstream
+1. Pull from upstream / Sync fork
 2. Update `config.json` if there are any changes in config.dist.json or config-info
 3. Update `sitemap.xml` if needed
-4. Perform step 3 and 4 of `installation > On GitHub pages` if you are using GitHub pages
+4. Perform step 3 & 4 of `installation > On GitHub pages` if you are using GitHub pages
 5. Perform step 2 & 3 of `installation > On your own server` if you are hosting it on you own server.
 
 ## Features
