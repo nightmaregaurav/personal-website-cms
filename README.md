@@ -13,18 +13,25 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 ### On GitHub pages
 1. Fork the repository
 2. Go to settings and enable GitHub pages
-3. Copy `config.json.dist` as `config.json`
+3. Copy `config.dist.json` as `config.json`
 4. Change the data in `config.json` to match your data 
 5. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
 6. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting 
 7. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL in github page>"`
+8. Visit `https://<YOUR-website-root>/gh-sitemap/<YOUR-website-root>` to generate sitemap
+9. Copy all content of sitemap and save as `sitemap.xml`
 ### On your own server
 1. Clone the repository
-2. Copy `config.json.dist` as `config.json`
+2. Copy `config.dist.json` as `config.json`
 3. Change the data in `config.json` to match your data 
 4. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
 5. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL>"` if you are using path other than / as root
+6. Visit `https://<YOUR-website-root>/get-sitemap/<YOUR-website-root>` to generate sitemap 
+7. Copy all content of sitemap and save as `sitemap.xml`
  
+## Maintenance
+1. Update `config.json`
+2. Update `sitemap.xml` using previous steps if you added or removed projects or enabled/disabled gallery
 
 ## Features
 * Completely dynamic setup.

@@ -119,7 +119,7 @@
      "name": "Beach",
      "url": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
    },
-   ... so on for all, don't add "gallery" key itself if you don't want to show gallery
+   ... so on for all, "gallery" with empty array if gallery feature is not needed
  ],
  "services": {
      "intro": Optional
@@ -154,3 +154,5 @@
   "messageAPI": Optional: endpoint to api that accept POST request with JSON body containing "name", "email", "message", "ip" keys
   "resume": Optional: URL to resume
 }
+
+top-level keys should not be empty, give any blank values matching their type
