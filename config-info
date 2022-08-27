@@ -1,0 +1,156 @@
+{
+  "favicon": Compulsory
+  "apple-touch-icon": Compulsory
+  "meta": [
+      {"name": "description", "content": "My Website"},
+      {"name": "theme-color", "content": "#000000"}
+      ... So on for all META tags, optional
+    ],
+  "main-title": Compulsory
+  "full-name": Compulsory
+  "profile-pic": Compulsory
+  "profile-alt": Optional
+  "intro-pic": Compulsory
+  "intro-words": [
+    Variable Length words, at least one Compulsory
+  ],
+  "social-urls": {
+    "github" : "https://www.github.com",
+    "linkedin" : "https://www.linkedin.com",
+    ... So on, for all social media platforms. Optional.
+  },
+  "about": {
+    "pic": Compulsory,
+    "intro": Compulsory,
+    "image-alt": Optional,
+    "info": {
+      "name": "Gaurav Nyaupane",
+      "Birth": "1 May 1995",
+      "Website": "www.example.com",
+      ... So on, for all personal info to show in about page, Optional but Recommended
+    },
+    "testimonials-intro": Optional
+    "testimonials": [
+    {
+        "name": Optional
+        "pic": Optional
+        "company": Optional
+        "designation": Optional
+        "on": Optional
+        "said": Optional
+        "highlight": Optional
+    }
+    ... So on for all testimonials
+    ]
+  },
+  "education": {
+    "intro": Optional,
+    "timeline": [
+      {
+        "title": Compulsory,
+        "institute": Optional
+        "instituteUrl": Optional
+        "university": Optional
+        "universityUrl": Optional
+        "from": Optional
+        "to": Optional
+        "description": Optional,
+        "achievements": [
+          "Some Achievement",
+          ... So on for all achievements, Optional
+        ]
+      },
+      ... So on for all education
+    ]
+  },
+  "experience": {
+    "intro": Optional,
+    "timeline": [
+      {
+        "title": Compulsory,
+        "organization": Optional
+        "organizationUrl": Optional
+        "from": Optional
+        "to": Optional
+        "description": Optional,
+        "achievements": [
+          "Some Achievement",
+          ... So on for all achievements, Optional
+        ]
+      },
+      ... So on for all experience
+    ]
+  },
+  "projects": {
+    "intro": Optional
+    "contents": [
+      {
+        "title": Compulsory
+        "extLinks": [
+          {
+            "title": "Website",
+            "url": "http://www.example.com"
+          },
+          {
+              "title": "Github",
+              "url": "http://www.example.com"
+          }
+            ... So on for all external links, Optional
+        ],
+        "imagesUrl":[
+          At least one Compulsory
+        ],
+        "description": Optional, Recommended
+        "majorPoints": [
+          {"title": "Achievement Title", "info": "Some Achievement"},
+          {"title": "Another Achievement Title", "info": "Some other Achievement"},
+          ... So on for all major points, Optional, at least one recommended
+        ],
+        "categories": [
+          "Category 1",
+          "Category 2",
+          ... So on for all category, Optional
+        ]
+      }
+    ]
+  },
+ "gallery": [
+   {
+     "name": "Beach",
+     "url": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+   },
+   ... so on for all, don't add "gallery" key itself if you don't want to show gallery
+ ],
+ "services": {
+     "intro": Optional
+     "contents": [
+       {
+         "title": Compulsory
+         "icon": Compulsory
+         "link": Optional
+         "description": Optional but Recommended
+       }
+       ... So on for all services, Add quiet a few.
+
+     ],
+     "perks": [
+       {
+         "title": Compulsory,
+         "icon": Compulsory
+       }
+       ... So on for all perks, Optional
+     ]
+   },
+   "skills": {
+    "intro": Optional,
+    "contents": [
+      {
+        "title": Compulsory,
+        "percentage": Compulsory
+      }
+     ... So on for all services, Add quiet a few.
+    ]
+  },
+  "messageAPI": Optional: endpoint to api that accept POST request with JSON body containing "name", "email", "message", "ip" keys
+  "resume": Optional: URL to resume
+}
