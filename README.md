@@ -10,17 +10,20 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 |:----------:|:----------:|
 
 ## Installation
-### On github pages
+### On GitHub pages
 1. Fork the repository
-2. Go to settings and enable github pages
+2. Go to settings and enable GitHub pages
 3. Copy `config.json.dist` as `config.json`
 4. Change the data in `config.json` to match your data 
 5. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
+6. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting 
+7. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL in github page>"`
 ### On your own server
 1. Clone the repository
 2. Copy `config.json.dist` as `config.json`
 3. Change the data in `config.json` to match your data 
 4. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
+5. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL>"` if you are using path other than / as root
  
 
 ## Features
