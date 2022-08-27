@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        let home = "";
+        const pathSegmentsToKeep = (home === "") ? 0 : home.replace(/\/+$/, '').split("//")[1]?.split("/").slice(1) ?? [];
+
+        let loc = window.location;
+        loc.replace(
+            loc.protocol + '//' + loc.hostname + (loc.port ? ':' + loc.port : '') +
+            loc.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+            loc.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+            (loc.search ? '&' + loc.search.slice(1).replace(/&/g, '~and~') : '') +
+            loc.hash
+        );
+
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,6 +1,8 @@
 # Statically hosted dynamic personal website
 
 This project runs using client side technology so that it can be hosted on a server that can only host static websites. But it uses JSON api to make things Dynamic(Kind of).
+<br>
+If you are not reading this from the `Personal-Website-Client` Repository of `NightmareGaurav`, then follow this <a href="https://github.com/nightmaregaurav/personal-website-client">link</a>.
 
 ![](1.png)
 
