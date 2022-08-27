@@ -11,12 +11,14 @@ This project runs using client side technology so that it can be hosted on a ser
 ### On github pages
 1. Fork the repository
 2. Go to settings and enable github pages
-3. Change the data in `config.json` to match your data
-4. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
+3. Copy `config.json.dist` as `config.json`
+4. Change the data in `config.json` to match your data 
+5. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
 ### On your own server
 1. Clone the repository
-2. Change the data in `config.json` to match your data 
-3. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
+2. Copy `config.json.dist` as `config.json`
+3. Change the data in `config.json` to match your data 
+4. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
  
 
 ## Features
@@ -46,5 +48,5 @@ This project runs using client side technology so that it can be hosted on a ser
 - State changes: **Changes made to the licensed material must be documented. Along with link to original source**
 
 ---
-Open For Contribution
+Currently, not open For contribution. Issues and Suggestions are welcomed
 ---
