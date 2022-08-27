@@ -1,12 +1,23 @@
 # Statically hosted dynamic personal website
 
-This project runs using client side technology so that it can be hosted on a server that can only host static websites. But it uses JSON api to make things Dynamic(Kind of). 
+This project runs using client side technology so that it can be hosted on a server that can only host static websites. But it uses JSON api to make things Dynamic(Kind of).
 
-## Usage
+![](1.png)
 
-1. Host this project on a server.
-2. Make changes on `config.json` and refresh the page.
-3. Keys in config.json are self-explanatory. But if you should need guidance, make sure to read `config-inf0` 
+| ![](2.png) | ![](3.png) |
+|:----------:|:----------:|
+
+## Installation
+### On github pages
+1. Fork the repository
+2. Go to settings and enable github pages
+3. Change the data in `config.json` to match your data
+4. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
+### On your own server
+1. Clone the repository
+2. Change the data in `config.json` to match your data 
+3. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
+ 
 
 ## Features
 * Completely dynamic setup.
