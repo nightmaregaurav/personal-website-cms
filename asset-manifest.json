@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ed1949e.css",
-    "main.js": "/static/js/main.9f646852.js",
-    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "main.css": "/static/css/main.b5d5fd54.css",
+    "main.js": "/static/js/main.7f6eb68c.js",
+    "static/js/27.a26b8b2c.chunk.js": "/static/js/27.a26b8b2c.chunk.js",
     "static/media/boxicons.svg": "/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
     "static/media/boxicons.eot": "/static/media/boxicons.21f7c5dd64d88e1fc666.eot",
     "static/media/boxicons.woff": "/static/media/boxicons.02aa967c5bfb9489501a.woff",
@@ -19,13 +19,10 @@
     "static/media/barlow-semi-condensed-vietnamese-400-normal.woff2": "/static/media/barlow-semi-condensed-vietnamese-400-normal.3df6e901739d10656ad7.woff2",
     "static/media/lg.woff?22t19m": "/static/media/lg.0add59587d07387b771f.woff",
     "static/media/lg.ttf?22t19m": "/static/media/lg.a53dcc5ea47fe7d1d9fc.ttf",
-    "index.html": "/index.html",
-    "main.7ed1949e.css.map": "/static/css/main.7ed1949e.css.map",
-    "main.9f646852.js.map": "/static/js/main.9f646852.js.map",
-    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.7ed1949e.css",
-    "static/js/main.9f646852.js"
+    "static/css/main.b5d5fd54.css",
+    "static/js/main.7f6eb68c.js"
   ]
 }
