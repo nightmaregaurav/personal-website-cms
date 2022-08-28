@@ -30,7 +30,9 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 6. Keys in `config.json` are self-explanatory. But if you should need guidance, make sure to read `config-info`
 7. Visit `https://<your-website-root>/get-sitemap/<your-website-root>` to generate sitemap 
 8. Copy all content of sitemap and save as `sitemap.xml`
- 
+
+<b> It is recommended that you DO NOT add/modify any other files than specified above in the repository. As they may get overridden or prevent updates. If you need to serve static files (For example to serve images and provide url in 'config.json' you can do so is 'data' folder in the root of the repo) </b>
+
 ## Maintenance
 1. Update `config.json`
 2. Update `sitemap.xml` using previous steps if you added or removed projects or enabled/disabled gallery
