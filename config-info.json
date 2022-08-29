@@ -1,158 +1,144 @@
 {
-  "favicon": Compulsory
-  "apple-touch-icon": Compulsory
-  "meta": [
-      {"name": "description", "content": "My Website"},
-      {"name": "theme-color", "content": "#000000"}
-      ... So on for all META tags, optional
-    ],
-  "main-title": Compulsory
-  "full-name": Compulsory
-  "profile-pic": Compulsory
-  "profile-alt": Optional
-  "intro-pic": Compulsory
-  "intro-words": [
-    Variable Length words, at least one Compulsory
-  ],
-  "social-urls": {
-    "github" : "https://www.github.com",
-    "linkedin" : "https://www.linkedin.com",
-    ... So on, for all social media platforms. Optional.
-  },
-  "about": {
-    "pic": Compulsory,
-    "intro": Compulsory,
-    "image-alt": Optional,
-    "info": {
-      "name": "Gaurav Nyaupane",
-      "Birth": "1 May 1995",
-      "Website": "www.example.com",
-      ... So on, for all personal info to show in about page, Optional but Recommended
-    },
-    "testimonials-intro": Optional
-    "testimonials": [
+  "favicon": ["IMAGE URL", "Compulsory", "URL to image", "https://example.com/favicon.ico"],
+  "apple-touch-icon": ["IMAGE URL", "Compulsory", "URL to image", "https://example.com/apple-touch-icon.png"],
+  "meta": ["ARRAY OF OBJECT", "Optional", "Array of meta tags", [
     {
-        "name": Optional
-        "pic": Optional
-        "company": Optional
-        "designation": Optional
-        "on": Optional
-        "said": Optional
-        "highlight": Optional
+      "name": ["STRING", "Compulsory", "Name of meta tag", "description"],
+      "content": ["STRING", "Compulsory", "Content of meta tag", "This is a description"]
     }
-    ... So on for all testimonials
-    ]
-  },
-  "education": {
-    "intro": Optional,
-    "timeline": [
+  ]],
+  "main-title": ["STRING", "Compulsory", "title of application", "Gaurav Nyaupane"],
+  "full-name": ["STRING", "Compulsory", "Full name of the site owner", "Gaurav Nyaupane"],
+  "profile-pic" : ["IMAGE URL", "Compulsory", "URL to image to show in sidebar", "https://example.com/profile-pic.jpg"],
+  "profile-alt" : ["STRING", "Optional", "Alt text for profile pic", "Profile picture of Gaurav Nyaupane"],
+  "social-urls": ["ARRAY OF OBJECT", "Optional", "Array of social media URLs", [
+    {
+      "name": ["STRING", "Compulsory", "Name of social media in lowercase dash(-) separated if name has space", "facebook"],
+      "url": ["URL", "Compulsory", "URL to social media profile", "https://www.facebook.com/nightmaregaurav"]
+    }
+  ]],
+  "resume": ["URL", "Optional", "URL to resume", "https://example.com/resume.pdf"],
+  "intro-pic": ["IMAGE URL", "Compulsory", "URL to image to show in intro page", "https://example.com/intro-pic.jpg"],
+  "intro-words": ["ARRAY OF STRING", "At Least One", "Words to tell what you are in intro page.", [
+    "Web developer",
+    "Freelancer"
+  ]],
+  "about": ["OBJECT", "Optional", "Data used in about section", {
+    "pic": ["IMAGE URL", "Compulsory", "URL to image to show in about section", "https://example.com/about-pic.jpg"],
+    "image-alt": ["STRING", "Optional", "Alt text for about image", "Gaurav Nyaupane's photo"],
+    "intro": ["STRING", "Compulsory", "Intro text to show in about section", "I am a fullstack developer and freelancer. I have been working in software development for the last 5 years. I have worked on various projects and have spearheaded various projects. I am always looking for new challenges to learn new technologies."],
+    "info": ["ARRAY OF OBJECT", "Optional", "Array of info to show in about section", [
       {
-        "title": Compulsory,
-        "institute": Optional
-        "instituteUrl": Optional
-        "university": Optional
-        "universityUrl": Optional
-        "from": Optional
-        "to": Optional
-        "description": Optional,
-        "achievements": [
-          "Some Achievement",
-          ... So on for all achievements, Optional
-        ]
-      },
-      ... So on for all education
-    ]
-  },
-  "experience": {
-    "intro": Optional,
-    "timeline": [
+        "title": ["STRING", "Compulsory", "Title of info", "Email"],
+        "text": ["STRING", "Compulsory", "Content of info", "abc@mail.com"]
+      }
+    ]],
+    "testimonials-intro": ["STRING", "Optional", "Intro text to show in testimonials section", "Here's what my clients say about me."],
+    "testimonials": ["ARRAY OF OBJECT", "Optional", "Array of testimonials to show in testimonials section", [
       {
-        "title": Compulsory,
-        "organization": Optional
-        "organizationUrl": Optional
-        "from": Optional
-        "to": Optional
-        "description": Optional,
-        "achievements": [
-          "Some Achievement",
-          ... So on for all achievements, Optional
-        ]
-      },
-      ... So on for all experience
-    ]
-  },
-  "projects": {
-    "intro": Optional
-    "contents": [
+        "name": ["STRING", "Optional", "Name of client", "John Doe"],
+        "pic": ["IMAGE URL", "Optional", "URL to image of client", "https://example.com/testimonial-pic.jpg"],
+        "company": ["STRING", "Optional", "Company of client", "XYZ Company"],
+        "designation": ["STRING", "Optional", "Designation of client", "Web Developer"],
+        "on": ["STRING", "Optional", "Date of testimonial", "01/01/2019"],
+        "said": ["STRING", "Optional", "Testimonial of client", "I have worked with Gaurav for the last 5 years. He is a great developer and has spearheaded many projects."],
+        "highlight": ["STRING", "Optional", "Highlight testimonial of client", "I had never met such a nice friend and a great mentor in a same person before i met him."]
+      }
+    ]]
+  }],
+  "education": ["OBJECT", "Optional", "Data used in education section", {
+    "intro": ["STRING", "Optional", "Intro text to show in education section", "I started learning programming on my own. I started working on various projects and spearheaded various projects. Later, I joined BCA. Here's info about my education and academic achievements."],
+    "timeline": ["ARRAY OF OBJECT", "At Least One", "Array of all education achievements sorted in an order.", [
       {
-        "title": Compulsory
-        "extLinks": [
+        "title": ["STRING", "Compulsory", "Title of education achievement", "Bachelor of Computer Application"],
+        "institute": ["STRING", "Optional", "Name of institute", "Mechi Multiple Campus"],
+        "instituteUrl": ["URL", "Optional", "URL to institute", "https://mechicampus.edu.np/"],
+        "university": ["STRING", "Optional", "Name of university", "Tribhuvan University"],
+        "universityUrl": ["URL", "Optional", "URL to university", "https://www.tribhuvan-university.edu.np/"],
+        "from": ["STRING", "Optional", "Date of start of education", "2017"],
+        "to": ["STRING", "Optional", "Date of end of education", "2022"],
+        "description": ["STRING", "Optional", "A paragraph or two about this milestone.", "BCA's core motive is production of highly qualified professionals who have both theoretical and practical knowledge in computer systems and its application."],
+        "achievements": ["ARRAY OF string", "Optional", "Array of achievements", [
+          "Been semester topper in 5 semesters."
+        ]]
+      }
+    ]]
+  }],
+  "experience": ["OBJECT", "Optional", "Data used in experience section.", {
+    "intro": ["STRING", "Optional", "Intro text to show in experience section", "I have worked on various projects and spearheaded various projects. Here's info about my work experience."],
+    "timeline": ["ARRAY OF OBJECT", "At Least One", "Array of all work experience sorted in an order.",[
+      {
+        "title": ["STRING", "Compulsory", "Title of work experience", "Dot Net Developer"],
+        "organization": ["STRING", "Optional", "Name of organization", "Crystal Solution"],
+        "organizationUrl": ["URL", "Optional", "URL to organization", "https://crystalsolution.com.np/"],
+        "from": ["STRING", "Optional", "Date of start of work experience", "Jan 2022"],
+        "to": ["STRING", "Optional", "Date of end of work experience", "Jul 2022"],
+        "description": ["STRING", "Optional", "A paragraph or two about this milestone.", "Crystal solution is a software company that provides web development services to various clients. Their flagship Product is Crystal ERP which is a complete ERP system for small and medium sized businesses."],
+        "achievements": ["ARRAY OF STRING", "Optional", "Array of achievements", [
+          "Unit Test, Integration Test"
+        ]]
+      }
+    ]]
+  }],
+  "projects": ["OBJECT", "Optional", "Data used in projects section.", {
+    "intro": ["STRING", "Optional", "Intro text to show in projects section", "Open source projects I initiated or created are available on my GitHub profile. Some of my projects which are not listed in my GitHub public profile are listed below."],
+    "contents": ["ARRAY OF OBJECT", "At Least One", "Array of all of your projects sorted in an order.", [
+      {
+        "title": ["STRING", "Compulsory", "Title of project", "ERP"],
+        "extLinks": ["ARRAY OF OBJECT", "Optional", "Array of external links to show for this project", [
           {
-            "title": "Website",
-            "url": "http://www.example.com"
-          },
-          {
-              "title": "Github",
-              "url": "http://www.example.com"
+            "title": ["STRING", "Compulsory", "Title of external link, Title cased", "Website"],
+            "url": ["URL", "Compulsory", "URL to external link", "https://example.com/erp"]
           }
-            ... So on for all external links, Optional
-        ],
-        "imagesUrl":[
-          At least one Compulsory
-        ],
-        "description": Optional, Recommended
-        "majorPoints": [
-          {"title": "Achievement Title", "info": "Some Achievement"},
-          {"title": "Another Achievement Title", "info": "Some other Achievement"},
-          ... So on for all major points, Optional, at least one recommended
-        ],
-        "categories": [
-          "Category 1",
-          "Category 2",
-          ... So on for all category, Optional
-        ]
+        ]],
+        "imagesUrl": ["ARRAY OF IMAGE URL", "At Least One", "Array of image URLs to show for this project", [
+          "https://example.com/erp-1.jpg",
+          "https://example.com/erp-2.jpg"
+        ]],
+        "description": ["STRING", "Optional", "A paragraph or two about this project.", "ERP is a complete ERP system for small and medium sized businesses. It has various modules like HR, Inventory, Sales, Purchase, etc."],
+        "majorPoints": ["ARRAY OF OBJECT", "At Least One", "Array of major points to show for this project", [
+          {
+            "title": ["STRING", "Compulsory", "Title of major point", "Technology"],
+            "info": ["STRING", "Optional", "A short text about this major point.", "ASP.NET"]
+          }
+        ]],
+        "categories": ["ARRAY OF STRING", "Optional", "Array of categories to show for this project", [
+          "Web Development"
+        ]]
       }
-    ]
-  },
- "gallery": [
-   {
-     "name": "Beach",
-     "url": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-   },
-   ... so on for all, "gallery" with empty array if gallery feature is not needed
- ],
- "services": {
-     "intro": Optional
-     "contents": [
-       {
-         "title": Compulsory
-         "icon": Compulsory
-         "link": Optional
-         "description": Optional but Recommended
-       }
-       ... So on for all services, Add quiet a few.
-
-     ],
-     "perks": [
-       {
-         "title": Compulsory,
-         "icon": Compulsory
-       }
-       ... So on for all perks, Optional
-     ]
-   },
-   "skills": {
-    "intro": Optional,
-    "contents": [
+    ]]
+  }],
+  "gallery": ["ARRAY OF OBJECT", "Optional", "Array of gallery items to show in gallery section", [
+    {
+      "name": ["STRING", "Compulsory", "Name of gallery item", "My Pic"],
+      "url": ["IMAGE URL", "Compulsory", "URL to image of gallery item", "https://example.com/my-pic.jpg"]
+    }
+  ]],
+  "services": ["OBJECT", "Optional", "Data used in services section.", {
+    "intro": ["STRING", "Optional", "Intro text to show in services section", "From web design to web and software development I provide wide range of services. Here's info about my services."],
+    "contents": ["ARRAY OF OBJECT", "At Least One", "Array of all services sorted in an order.", [
       {
-        "title": Compulsory,
-        "percentage": Compulsory
+        "title": ["STRING", "Compulsory", "Title of service", "Web Development"],
+        "icon": ["IMAGE URL", "Compulsory", "URL to icon of service", "https://example.com/web-dev-icon.png"],
+        "link": ["URL", "Optional", "URL to service info if any", "https://example.com/web-dev"],
+        "description": ["STRING", "Compulsory", "A short text explaining about this service.", "I have worked on and spearheaded various web development projects."]
       }
-     ... So on for all services, Add quiet a few.
-    ]
-  },
-  "messageAPI": Optional: endpoint to api that accept POST request with JSON body containing "name", "email", "message", "ip" keys
-  "resume": Optional: URL to resume
+    ]],
+    "perks": ["ARRAY OF OBJECT", "Optional", "Array of perks to show in services section.", [
+      {
+        "title": ["STRING", "Compulsory", "Title of perk", "Free Consultation"],
+        "icon": ["IMAGE URL", "Compulsory", "URL to icon of perk", "https://example.com/free-consultation-icon.png"]
+      }
+    ]]
+  }],
+  "skills": ["OBJECT", "Optional", "Data used in skills section.", {
+    "intro": ["STRING", "Optional", "Intro text to show in skills section", "Below are listed my acquired skills. Note that the numbers are approximate."],
+    "contents": ["ARRAY OF OBJECT", "At Least One", "Array of all skills sorted in an order.", [
+      {
+        "title": ["STRING", "Compulsory", "Title of skill", "HTML"],
+        "percentage": ["NUMBER", "Compulsory", "Percentage of skill", 90]
+      }
+    ]]
+  }],
+  "messageAPI": ["URL", "Optional", "URL to message API endpoint that accept POST request with JSON body containing 'name', 'email', 'message', 'ip' keys", "https://example.com/message-api"]
 }
-
-top-level keys should not be empty, give any blank values matching their type

@@ -1,190 +1,44 @@
 {
-  "favicon": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-  "apple-touch-icon": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-  "meta": [
-    {"name": "description", "content": "Gaurav's Website"},
-    {"name": "theme-color", "content": "#000000"}
-  ],
-  "main-title": "Gaurav Nyaupane",
-  "full-name": "Gaurav Nyaupane",
-  "profile-pic": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-  "profile-alt": "Gaurav Nyaupane's photo",
-  "intro-pic": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-  "intro-words": [
-    "Developer",
-    "Designer",
-    "Engineer",
-    "Freelancer"
-  ],
-  "social-urls": {
-    "github" : "https://www.google.com",
-    "linkedin" : "https://www.google.com",
-    "facebook" : "https://www.google.com",
-    "instagram" : "https://www.google.com",
-    "twitter" : "https://www.google.com",
-    "google-plus" : "https://www.google.com",
-    "youtube" : "https://www.google.com",
-    "snapchat" : "https://www.google.com",
-    "dribbble" : "https://www.google.com",
-    "blogger" : "https://www.google.com"
-  },
+  "favicon": "",
+  "apple-touch-icon": "",
+  "meta": [],
+  "main-title": "",
+  "full-name": "",
+  "profile-pic": "",
+  "profile-alt": "",
+  "social-urls": [],
+  "resume": "",
+  "intro-pic": "",
+  "intro-words": [],
   "about": {
-    "pic": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    "intro": "A paragraph or two about you, explain yourself in a few words.",
-    "image-alt": "Gaurav Nyaupane's photo",
-    "info": {
-      "name": "Gaurav Nyaupane",
-      "Birth": "1 May 1995",
-      "Website": "www.example.com",
-      "Phone": "+123 456 7890",
-      "Address": "123, Main Street, New York, USA",
-      "Language": "English, French",
-      "Degree": "Master",
-      "Email": "email@example.com",
-      "Freelance": "Available",
-      "Available for hire": "Yes",
-      "Hourly Rate": "10$",
-      "Certifications": "Some Certifications"
-    },
-    "testimonials-intro": "Here's what my clients say about me.",
-    "testimonials": [
-      {
-        "name": "Gaurav Nyaupane",
-        "pic": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "company": "Company name",
-        "designation": "Software Engineer",
-        "on": "1 May 1995",
-        "said": "He is a nice developer.",
-        "highlight": "a nice developer"
-      }
-    ]
+    "pic": "",
+    "image-alt": "",
+    "intro": "",
+    "info": [],
+    "testimonials-intro": "",
+    "testimonials": []
   },
   "education": {
-    "intro": "A Really long intro explaining in brief about your education journey.",
-    "timeline": [
-      {
-        "title": "Bachelor of Computer Application",
-        "institute": "Some Institute",
-        "instituteUrl": "http://www.example.com",
-        "university": "Some University",
-        "universityUrl": "http://www.example.com",
-        "from": "1 May 1995",
-        "to": "1 May 1995",
-        "description": "A paragraph or two about your education.",
-        "achievements": [
-          "Some Achievement",
-          "Some other Achievement",
-          "Better Achievement",
-          "Even Better Achievement"
-        ]
-      }
-    ]
+    "intro": "",
+    "timeline": []
   },
   "experience": {
-    "intro": "A Really long intro explaining in brief about your work journey.",
-    "timeline": [
-      {
-        "title": "Software Engineer",
-        "organization": "Some Company",
-        "organizationUrl": "http://www.example.com",
-        "from": "1 May 1995",
-        "to": "1 May 1995",
-        "description": "A paragraph or two about your experience.",
-        "achievements": [
-          "Some Achievement",
-          "Some other Achievement",
-          "Better Achievement",
-          "Even Better Achievement"
-        ]
-      }
-    ]
+    "intro": "",
+    "timeline": []
   },
   "projects": {
-    "intro": "A Really long intro explaining in brief about your projects.",
-    "contents": [
-      {
-        "title": "Some Project",
-        "extLinks": [
-          {
-            "title": "Website",
-            "url": "http://www.example.com"
-          },
-          {
-              "title": "Github",
-              "url": "http://www.example.com"
-          }
-        ],
-        "imagesUrl":[
-          "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-          "https://apod.nasa.gov/apod/image/2202/AuroraPillars_Correia_960.jpg"
-        ],
-        "description": "A paragraph or two about your project.",
-        "majorPoints": [
-          {"title": "Achievement Title", "info": "Some Achievement"},
-          {"title": "Another Achievement Title", "info": "Some other Achievement"},
-          {"title": "A third Achievement Title", "info": "Better Achievement"},
-          {"title": "A fourth Achievement Title", "info": "Even Better Achievement"}
-        ],
-        "categories": [
-          "Category 1",
-          "Category 2",
-          "Category 3"
-        ]
-      }
-    ]
+    "intro": "",
+    "contents": []
   },
-  "gallery": [
-    {
-      "name": "Beach",
-      "url": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    }
-  ],
+  "gallery": [],
   "services": {
-    "intro": "A Really long intro explaining in brief about your services.",
-    "contents": [
-      {
-        "title": "Some Service",
-        "icon": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "link": "https://www.example.com",
-        "description": "A short paragraph about your service."
-      }
-    ],
-    "perks": [
-      {
-        "title": "Some perk",
-        "icon": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-      }
-    ]
+    "intro": "",
+    "contents": [],
+    "perks": []
   },
   "skills": {
-    "intro": "A Really long intro explaining in brief about your skills.",
-    "contents": [
-      {
-        "title": "HTML",
-        "percentage": "80"
-      },
-      {
-        "title": "CSS",
-        "percentage": "90"
-      },
-      {
-        "title": "JavaScript",
-        "percentage": "88"
-      },
-      {
-        "title": "PHP",
-        "percentage": "70"
-      },
-      {
-        "title": "WordPress",
-        "percentage": "67"
-      },
-      {
-        "title": "React",
-        "percentage": "68"
-      }
-    ]
+    "intro": "",
+    "contents": []
   },
-  "messageAPI": "https://example.com",
-  "resume": "https://example.com"
+  "messageAPI": ""
 }
