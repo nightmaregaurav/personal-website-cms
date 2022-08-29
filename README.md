@@ -1,4 +1,3 @@
-# WORK IN PROGRESS, DO NOT USE UNLESS YOU ARE READY TO FACE BREAKING AND DESTRUCTIVE CHANGES 
 # Statically hosted dynamic personal website
 
 This project runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic(Kind of).
