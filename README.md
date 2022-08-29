@@ -11,38 +11,38 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 
 ## Installation
 ### On GitHub pages
-1. Fork the repository, preferably with name `<your-username>.github.io`
+1. Fork the repository, preferably with name `{your-username}.github.io`
 2. Go to settings and enable GitHub pages
-3. Change path of main static files (css and js) in `index.html` to match your hosting path IE: `<your website root>`
-4. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL in github page>"` if you are using path other than / as root, normally happens when you are not using custom domain 
+3. Change path of main static files (css and js) in `index.html` to match your hosting path IE: `{your website root}`
+4. Change line `let home = "";` in `404.html` to `let home = "{YOUR HOME URL in github page}"` if you are using path other than / as root, normally happens when you are not using custom domain 
 5. Copy `config.dist.json` as `config.json`
 6. Change the data in `config.json` to match your data (Read `config-info.json` to understand the data type and format, Read "How to understand `config-info.json`?" section to understand `config-info.json`)
 7. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting 
-8. Visit `https://<your-website-root>/gh-sitemap` to generate sitemap 
+8. Visit `https://{your-website-root}/gh-sitemap` to generate sitemap 
 9. Copy all content of sitemap and save as `sitemap.xml`
 ### On your own server
 1. Clone the repository 
-2. Change path of main static files (css and js) in `index.html` to match your hosting path IE: `<your website root>`
-3. Change line `let home = "";` in `404.html` to `let home = "<YOUR HOME URL>"` if you are using path other than / as root 
+2. Change path of main static files (css and js) in `index.html` to match your hosting path IE: `{your website root}`
+3. Change line `let home = "";` in `404.html` to `let home = "{YOUR HOME URL}"` if you are using path other than / as root 
 4. Copy `config.dist.json` as `config.json`
 5. Change the data in `config.json` to match your data (Read `config-info.json` to understand the data type and format, Read "How to understand `config-info.json`?" section to understand `config-info.json`)
-6. Visit `https://<your-website-root>/get-sitemap` to generate sitemap 
+6. Visit `https://{your-website-root}/get-sitemap` to generate sitemap 
 7. Copy all content of sitemap and save as `sitemap.xml`
 ### How to understand `config-info.json`?
 1. `config-info.json` explain the data format for `config.json` that is used to generate the website.
-2. `config-info.json` has same keys as `config.json` but the values are in the format `[<DATATYPE>, <CARDINALITY>, <INFO>, <EXAMPLE>]`.
-3. `DATATYPE` can be `STRING`, `OBJECT`, `NUMBER`, `URL`, `IMAGE URL`, `ARRAY OF <DATATYPE>`
+2. `config-info.json` has same keys as `config.json` but the values are in the format `[{DATATYPE}, {CARDINALITY}, {INFO}, {EXAMPLE}]`.
+3. `DATATYPE` can be `STRING`, `OBJECT`, `NUMBER`, `URL`, `IMAGE URL`, `ARRAY OF {DATATYPE}`
    1. `STRING` is a plain string
    2. `OBJECT` is an object that may have more Key/Value pairs
    3. `NUMBER` is a plain number
    4. `URL` is a valid URL
    5. `IMAGE URL` is a valid URL that points to a raw image
-   6. `ARRAY OF <DATATYPE>` is an array of <DATATYPE>
+   6. `ARRAY OF {DATATYPE}` is an array of {DATATYPE}
 4. `CARDINALITY` can be `Compulsory`, `Optional`, `At Least One`
    1. `Compulsory` means that the data is compulsory to be present in the `config.json` if parent is present.
    2. `Optional` means that the data is optional to be present in the `config.json` even if parent is present.
    3. `At Least One` means that at least one of the data is compulsory to be present in the `config.json` if parent is present.
-   4. For `Optional` `ARRAY OF <DATATYPE>` if you wish not to add any data, then add `[]` IE: Empty array 
+   4. For `Optional` `ARRAY OF {DATATYPE}` if you wish not to add any data, then add `[]` IE: Empty array 
 5. `INFO` is a description of the data
 6. `EXAMPLE` is a real example of the data to put in `config.json`
 
