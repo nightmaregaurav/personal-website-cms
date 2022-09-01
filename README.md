@@ -4,7 +4,7 @@ If you are not reading this from the `Personal-Website-Client` Repository of `Ni
 <br><br>
 This project runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic(Kind of).
 <br>
-It's built using React that depend totally on one configuration file. This app uses the [React Router](https://reactrouter.com/) library to make routing easier. The master code behind this application is not yet OpenSource. It push the new release into this repo periodically. It is still in development once V1 is completed, the master code will be OpenSource as well.
+It's built using React that depend totally on one configuration file. This app uses the [React Router](https://reactrouter.com/) library to make routing easier. The master project behind this application is not yet OpenSource. The master project build and push the new changes into this repo automatically once they are available. It is still in development once V1 is completed, the master repository will be OpenSource as well.
 
 ![](1.png)
 
