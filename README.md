@@ -1,8 +1,10 @@
 # Statically hosted dynamic personal website
 
+If you are not reading this from the `Personal-Website-Client` Repository of `NightmareGaurav`, then follow this <a href="https://github.com/nightmaregaurav/personal-website-client">link</a>.
+<br><br>
 This project runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic(Kind of).
 <br>
-If you are not reading this from the `Personal-Website-Client` Repository of `NightmareGaurav`, then follow this <a href="https://github.com/nightmaregaurav/personal-website-client">link</a>.
+It's built using React that depend totally on one configuration file. This app uses the [React Router](https://reactrouter.com/) library to make routing easier. The master code behind this application is not yet OpenSource. It push the new release into this repo periodically. It is still in development once V1 is completed, the master code will be OpenSource as well.
 
 ![](1.png)
 
