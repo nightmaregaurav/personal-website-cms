@@ -1,79 +1,83 @@
-# Statically hosted dynamic personal website
-
-If you are not reading this from the `Personal-Website-Client` Repository of `NightmareGaurav`, then follow this <a href="https://github.com/nightmaregaurav/personal-website-client">link</a>.
-<br><br>
-This project runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic(Kind of).
+# Micro CMS for statically hosted personal website [Personal Website CMS]
+This minimal CMS runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic. It provides Setup GUI to allow editing the website contents and configuration.
 <br>
-It's built using React that depend totally on one configuration file. This app uses the [React Router](https://reactrouter.com/) library to make routing easier. The master project behind this application is not yet OpenSource. The master project build and push the new changes into this repo automatically once they are available. It is still in development once V1 is completed, the master repository will be OpenSource as well.
+`It's not jekyll.` `Personal-Website-CMS` is built using React and depend on one or more configuration files. This app uses the [React Router](https://reactrouter.com/) library to make routing easier.
 
 ![](1.png)
 
 | ![](2.png) | ![](3.png) |
 |:----------:|:----------:|
 
+# Features
+* ### Classic Features
+    * About Page
+    * Education Page
+    * Experience Page
+    * Projects Page
+    * Individual project's page
+    * Gallery Page
+    * Services Page
+    * Skills Page
+    * Contact Page
+    * Setup GUI
+* ### Additional Features
+  * Completely dynamic setup.
+  * Dynamic content is generated on the fly.
+  * Dynamic content is generated using JSON api.
+  * Supports GitHub Pages (and give extra features like saving configuration on button click).
+  * Fast and easy to set up.
+  * Cheap to host static project on a server.
+  * Complete customization.
+
 ## Installation
-### On GitHub pages
-1. Fork the repository, preferably with name `{your-username}.github.io`
-2. Go to settings and enable GitHub pages
-3. Change path of main static files (css and js) in `index.html` to match your hosting path IE: `{your website root}`
-4. Change line `let home = "";` in `404.html` to `let home = "{YOUR HOME URL in github page}"` if you are using path other than / as root, normally happens when you are not using custom domain 
-5. Copy `config.dist.json` as `config.json`
-6. Change the data in `config.json` to match your data (Read `config-info.json` to understand the data type and format, Read "How to understand `config-info.json`?" section to understand `config-info.json`)
-7. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting 
-8. Visit `https://{your-website-root}/gh-sitemap` to generate sitemap 
-9. Copy all content of sitemap and save as `sitemap.xml`
-### On your own server
-1. Clone the repository 
-2. Change path of main static files (css and js) in `index.html` to match your hosting path IE: `{your website root}`
-3. Change line `let home = "";` in `404.html` to `let home = "{YOUR HOME URL}"` if you are using path other than / as root 
-4. Copy `config.dist.json` as `config.json`
-5. Change the data in `config.json` to match your data (Read `config-info.json` to understand the data type and format, Read "How to understand `config-info.json`?" section to understand `config-info.json`)
-6. Visit `https://{your-website-root}/get-sitemap` to generate sitemap 
-7. Copy all content of sitemap and save as `sitemap.xml`
-### How to understand `config-info.json`?
-1. `config-info.json` explain the data format for `config.json` that is used to generate the website.
-2. `config-info.json` has same keys as `config.json` but the values are in the format `[{DATATYPE}, {CARDINALITY}, {INFO}, {EXAMPLE}]`.
-3. `DATATYPE` can be `STRING`, `OBJECT`, `NUMBER`, `URL`, `IMAGE URL`, `ARRAY OF {DATATYPE}`
-   1. `STRING` is a plain string
-   2. `OBJECT` is an object that may have more Key/Value pairs
-   3. `NUMBER` is a plain number
-   4. `URL` is a valid URL
-   5. `IMAGE URL` is a valid URL that points to a raw image
-   6. `ARRAY OF {DATATYPE}` is an array of {DATATYPE}
-4. `CARDINALITY` can be `Compulsory`, `Optional`, `At Least One`
-   1. `Compulsory` means that the data is compulsory to be present in the `config.json` if parent is present.
-   2. `Optional` means that the data is optional to be present in the `config.json` even if parent is present.
-   3. `At Least One` means that at least one of the data is compulsory to be present in the `config.json` if parent is present.
-   4. For `Optional` `ARRAY OF {DATATYPE}` if you wish not to add any data, then add `[]` IE: Empty array 
-5. `INFO` is a description of the data
-6. `EXAMPLE` is a real example of the data to put in `config.json`
+* ### On GitHub pages
+  1. Fork the repository, preferably with name `{your-username}.github.io`
+  2. Go to settings and enable GitHub pages
+  3. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting.
+  4. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
-<b> It is recommended that you DO NOT add/modify any other files than specified above in the repository. As they may get overridden or prevent updates. If you need to serve static files (For example to serve images and provide url in 'config.json' you can do so is 'data' folder in the root of the repo) </b>
-
+* ### On your own server
+  1. Clone the repository and move all files to your server's `public_html` or `wwwroot` or equivalent folder. (referred as `www-folder`).
+     * Make sure the `www-folder` is empty before you perform this step.
+     * Make sure you move all files including hidden files.
+  2. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
 ## Maintenance
-1. Update `config.json`
-2. Update `sitemap.xml` using previous steps if you added or removed projects or enabled/disabled gallery
+1. Open Setup using `<root>/setup` URL or the key you chose with Ctrl+Shift+Alt (Default key is `s`). 
+2. Make Changes.
+3. Click `Save config.json`
+   * For GitHub Page, it will automatically commit and push the changes to the repository.
+   * For other hosting, you have to manually commit and push the changes(or upload) to the server.
+4. Wait for the changes to take effect. (It may take 1 to 5 minutes, Check your website to verify).
+5. Reopen and reload setup page.
+6. Click `Save sitemap.xml`
+   * For GitHub Page, it will automatically commit and push the changes to the repository.
+   * For other hosting, you have to manually commit and push the changes(or upload) to the server.
+7. Sit back and relax.
 
 ## Upgrade
-1. Pull from upstream or Sync fork
-2. Update `config.json` if there are any changes in `config.dist.json` or `config-info.json`
-3. Update `sitemap.xml` if needed
-4. Perform step 3 & 4 of `installation > On GitHub pages` if you are using GitHub pages
-5. Perform step 2 & 3 of `installation > On your own server` if you are hosting it on you own server.
+1. Pull from upstream or Sync fork.
+2. Open setup.
+3. Click `Fix 404.html`. 
+   * For GitHub Page, it will automatically commit and push the changes to the repository.
+   * For other hosting, you have to manually commit and push the changes(or upload) to the server.
+4. Click `Fix index.html`.
+   * For GitHub Page, it will automatically commit and push the changes to the repository.
+   * For other hosting, you have to manually commit and push the changes(or upload) to the server.
+5. Done
 
-## Features
-* Completely dynamic setup.
-* Dynamic content is generated on the fly.
-* Dynamic content is generated using JSON api.
-* Fast and easy to use.
-* Cheap to host static project on a server. Many trusted free hosts are also available.
-* Complete customization.
+### IMPORTANT
+* #### It is recommended that you DO NOT add/modify files in the repository manually unless you really know what you are doing.
+* #### If you need to serve static files in any special case, you can do so in and only in 'data' folder in the root of the repo</b>
+
+### Sometimes, those who view this repository are looking for the [Source Repository](https://github.com/nightmaregaurav/personal-website-cms-source)
+
+## This repository is only for
+* Forking/Cloning and hosting the website.
+* Discussion related to non-technical topics related to this CMS.
 
 ---
-
-## Note
-- Project is Licensed under GNU GPLv3.
+## Note: This Project is Licensed under GNU GPLv3.
 
 ### Which means Anyone are permitted for:
 - Commercial use: **The licensed material and derivatives may be used for commercial purposes.**
@@ -89,5 +93,5 @@ It's built using React that depend totally on one configuration file. This app u
 - State changes: **Changes made to the licensed material must be documented. Along with link to original source**
 
 ---
-Currently, not open For contribution. Issues and Suggestions are welcomed
+For Issues, Contributions, and Source Code: Visit the [Source Repository](https://github.com/nightmaregaurav/personal-website-cms-source)
 ---

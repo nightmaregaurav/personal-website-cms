@@ -67,3 +67,4 @@ db.sqlite3
 config.json
 CNAME
 sitemap.xml
+/data/
