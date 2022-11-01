@@ -2,4 +2,3 @@
 User-agent: *
 Disallow: /setup
 Disallow: /404.html
-Disallow: /?/
