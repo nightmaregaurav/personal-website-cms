@@ -1,7 +1,7 @@
 # Micro CMS for statically hosted personal website [Personal Website CMS]
 This minimal CMS runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic. It provides Setup GUI to allow editing the website contents and configuration.
 <br>
-`It's not jekyll.` `Personal-Website-CMS` is built using React and depend on one or more configuration files. This app uses the [React Router](https://reactrouter.com/) library to make routing easier.
+`It's not jekyll.` `Personal-Website-CMS` is built using React and depends on one or more configuration files. This app uses the [React Router](https://reactrouter.com/) library to make routing easier.
 
 ![](1.png)
 
@@ -19,7 +19,7 @@ This minimal CMS runs using client side technology so that it can also be hosted
     * Services Page
     * Skills Page
     * Contact Page
-    * Setup GUI
+    * Setup Page
 * ### Additional Features
   * Completely dynamic setup.
   * Dynamic content is generated on the fly.
@@ -34,16 +34,23 @@ This minimal CMS runs using client side technology so that it can also be hosted
   1. Fork the repository, preferably with name `{your-username}.github.io`
   2. Go to settings and enable GitHub pages
   3. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting.
-  4. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
+  4. Perform Step 3 & 4 of [Upgrade Section](#upgrade).
+  5. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
 * ### On your own server
   1. Clone the repository and move all files to your server's `public_html` or `wwwroot` or equivalent folder. (referred as `www-folder`).
      * Make sure the `www-folder` is empty before you perform this step.
      * Make sure you move all files including hidden files.
-  2. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
+  2. Perform Step 3 & 4 of [Upgrade Section](#upgrade).
+  3. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
+
+## Opening Setup UI
+* Navigate to `<root>/setup` URL
+* That may fail to work in some cases.
+* Use the key you chose in previous setup with Ctrl+Shift+Alt (Default key is `s` if you haven't set any).
 
 ## Maintenance
-1. Open Setup using `<root>/setup` URL or the key you chose with Ctrl+Shift+Alt (Default key is `s`). 
+1. Open setup page.
 2. Make Changes.
 3. Click `Save config.json`
    * For GitHub Page, it will automatically commit and push the changes to the repository.
@@ -57,7 +64,7 @@ This minimal CMS runs using client side technology so that it can also be hosted
 
 ## Upgrade
 1. Pull from upstream or Sync fork.
-2. Open setup.
+2. Open setup page.
 3. Click `Fix 404.html`. 
    * For GitHub Page, it will automatically commit and push the changes to the repository.
    * For other hosting, you have to manually commit and push the changes(or upload) to the server.
