@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+# personal-website-cms robots.txt
 User-agent: *
-Disallow:
+Disallow: /setup
+Disallow: /404.html
+Disallow: /?/
