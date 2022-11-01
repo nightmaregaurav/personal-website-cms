@@ -38,9 +38,9 @@ This minimal CMS runs using client side technology so that it can also be hosted
   5. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
 * ### On your own server
-  1. Clone the repository and move all files to your server's `public_html` or `wwwroot` or equivalent folder. (referred as `www-folder`).
+  1. Open terminal inside `public_html` or `wwwroot` or equivalent folder. (referred as `www-folder`).
+  2. Run `git clone https://github.com/nightmaregaurav/personal-website-cms.git .`
      * Make sure the `www-folder` is empty before you perform this step.
-     * Make sure you move all files including hidden files.
   2. Perform Step 3 & 4 of [Upgrade Section](#upgrade).
   3. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
