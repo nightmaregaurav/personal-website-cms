@@ -32,7 +32,7 @@ This minimal CMS runs using client side technology so that it can also be hosted
 ## Installation
 * ### On GitHub pages
   1. Fork the repository, preferably with name `{your-username}.github.io`
-  2. Go to settings and enable GitHub pages
+  2. Go to settings and enable GitHub pages. This may take some time. Visit `{your-username}.github.io` or the domain you chose to verify and move to next step.
   3. Perform Step 2, 3, & 4 of [Upgrade Section](#upgrade).
   4. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
