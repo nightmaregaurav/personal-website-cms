@@ -33,16 +33,15 @@ This minimal CMS runs using client side technology so that it can also be hosted
 * ### On GitHub pages
   1. Fork the repository, preferably with name `{your-username}.github.io`
   2. Go to settings and enable GitHub pages
-  3. Add CNAME and change the domain name to your domain name or setup domain name from your repo setting.
-  4. Perform Step 3 & 4 of [Upgrade Section](#upgrade).
-  5. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
+  3. Perform Step 2, 3, & 4 of [Upgrade Section](#upgrade).
+  4. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
 * ### On your own server
   1. Open terminal inside `public_html` or `wwwroot` or equivalent folder. (referred as `www-folder`).
   2. Run `git clone https://github.com/nightmaregaurav/personal-website-cms.git .`
      * Make sure the `www-folder` is empty before you perform this step.
-  2. Perform Step 3 & 4 of [Upgrade Section](#upgrade).
-  3. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
+  3. Perform Step 2, 3, & 4 of [Upgrade Section](#upgrade).
+  4. Follow Steps in [Maintenance Section](#maintenance) for website setup and customization.
 
 ## Opening Setup UI
 * Navigate to `<root>/setup` URL
