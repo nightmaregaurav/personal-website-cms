@@ -98,6 +98,8 @@ This minimal CMS runs using client side technology so that it can also be hosted
 - Same license: **Modifications must be released under the same license when distributing the licensed material. In some cases a similar or related license may be used.**
 - State changes: **Changes made to the licensed material must be documented. Along with link to original source**
 
+### Note that rehosting [Release Repository](https://github.com/nightmaregaurav/personal-website-cms) or [Source Repository](https://github.com/nightmaregaurav/personal-website-cms-source) instead of forking and/or removing credits/backlinks/ownership-info from either of them is strictly against the license term of this project and such actions are suable in a court of law.
+
 ---
 For Issues, Contributions, and Source Code: Visit the [Source Repository](https://github.com/nightmaregaurav/personal-website-cms-source)
 ---
