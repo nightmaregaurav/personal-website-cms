@@ -1,14 +1,9 @@
-personal-website-cms: A minimal dynamic personal-website/portfolio CMS that runs using client side technology and can be hosted as static website.
-Copyright (C) 2022  Gaurav Nyaupane <https://www.gauravnyaupane.com.np>
+GNU GPL Version 3
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License V3 as published by
-the Free Software Foundation.
+Copyright (c) 2023 Gaurav Nyaupane (aka nightmaregaurav) (https://github.com/nightmaregaurav)
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, Version 3.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
