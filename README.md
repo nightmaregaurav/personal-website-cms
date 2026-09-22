@@ -1,3 +1,5 @@
+# Archived in favor of a new portfolio website built on similar technology and idea. [Link](https://github.com/nightmaregaurav/portfolio) (may be private for now)
+
 # Micro CMS for statically hosted personal website [Personal Website CMS]
 This minimal CMS runs using client side technology so that it can also be hosted on a server that can only host static websites. It uses JSON api to make things Dynamic. It provides Setup GUI to allow editing the website contents and configuration.
 <br>
